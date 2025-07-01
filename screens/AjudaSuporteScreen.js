@@ -59,13 +59,13 @@ export default function AjudaSuporteScreen({navigation}) {
         <Text style={styles.footerText}>Em caso de emergência, disque 190 (Polícia Militar)</Text>
          <View style={styles.barra}>
                     <TouchableOpacity>
-                        <Icon name="phone" size={30} color="#3e5345" />
+                      <Icon name="phone" size={30} color="#3e5345" onPress={() => navigation.navigate('Contato')}/>
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Home')}>
-                        <Icon name="map-marker-alt" size={30} color="#3e5345" />
+                      <Icon name="map-marker-alt" size={30} color="#3e5345" />
                     </TouchableOpacity>
                     <TouchableOpacity onPress={() => navigation.navigate('Notificacao')}>
-                        <Icon name="bell" size={30} color="#3e5345" />
+                      <Icon name="bell" size={30} color="#3e5345" />
                     </TouchableOpacity>
                 </View>
       </ScrollView>
